@@ -1,0 +1,34 @@
+<script type="text/javascript">
+  RED.nodes.registerType('google-currency',{
+      category: 'function',
+      color: '#a6bbcf',
+      defaults: {
+          name: {value:""},
+          from: {value:"USD", required:true},
+          to: {value:"TRY", required:true},
+          // Other properties
+      },
+      inputs:1,
+      outputs:1,
+      icon: "file.png",
+      label: function() {
+          return this.name || "google-currency";
+      }
+  });
+</script>
+
+<script type="text/html" data-template-name="google-currency">
+  <div class="form-row">
+      <label for="node-input-from"><i class="fa fa-money"></i> From Currency</label>
+      <input type="text" id="node-input-from" placeholder="USD">
+  </div>
+  <div class="form-row">
+      <label for="node-input-to"><i class="fa fa-money"></i> To Currency</label>
+      <input type="text" id="node-input-to" placeholder="TRY">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="google-currency">
+  <p>This node converts currency from one to another using the google-currency package.</p>
+  <p>Specify the <strong>From Currency</strong> and <strong>To Currency</strong> in their respective fields. Example: From "USD" to "TRY".</p>
+</script>

@@ -1,0 +1,31 @@
+{
+  "name": "node-red-contrib-google-currency-scraper",
+  "version": "1.0.1",
+  "description": "Scrape, in Node-RED, extremely up-to-date exchange rates from Google fast and free.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "node-red",
+    "google",
+    "currency",
+    "scraper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marciogranzotto/node-red-contrib-google-currency-scraper.git"
+  },
+  "author": "Marcio Granzotto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marciogranzotto/node-red-contrib-google-currency-scraper/issues"
+  },
+  "homepage": "https://github.com/marciogranzotto/node-red-contrib-google-currency-scraper#readme",
+  "dependencies": {
+    "google-currency-scraper": "^1.2.2"
+  },
+  "node-red" : {
+      "nodes": {
+          "google-currency": "index.js"
+      }
+  }
+}
